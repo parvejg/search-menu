@@ -1,9 +1,12 @@
 .search-menu-main-container {
   display: flex;
   background-color: whitesmoke;
-  width: 80%;
+  width: 75%;
   height: 70vh;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
+  align-content: center;
+}
+.side-bar-container {
+  width: 30%;
+  height: 70vh;
+  background-color: rgb(212, 208, 208);
 }
