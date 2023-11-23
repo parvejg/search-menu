@@ -1,6 +1,14 @@
+import { useState } from "react";
 import { arraylinkList } from "./LinksList";
 import "./Search-menu.css";
+import { Paragraph } from "./Paragraph";
 export const SearchMenu = () => {
+  const [inputValue, setInputValue] = useState([]);
+
+  const filteredData = arraylinkList.filter((item) =>
+    item.toLowerCase().includes(inputValue)
+  );
+
   return (
     <div className="search-menu-main-container">
       <di className="side-bar-container">
@@ -9,8 +17,9 @@ export const SearchMenu = () => {
           type="text"
           className="side-bar-input"
           placeholder="Search here..."
+          onKeyUp={(e) => setInputValue(e.target.value)}
         />{" "}
-        {arraylinkList.map((item) => {
+        {filteredData.map((item) => {
           return (
             <div className="side-bar-links-container">
               <li className="side-bar-links">{item}</li>
@@ -20,13 +29,7 @@ export const SearchMenu = () => {
       </di>
       <div className="search-menu-contents">
         <h2>Page Content</h2>
-        <p className="content-page-content">
-          Start to type for a specific category/link inside the search bar to
-          "filter" the search options. Some text..Some text..Some text..Some
-          text..Some text..Some text..Some text..Some text.. Some other
-          text..Some text..Some text..Some text..Some text..Some text..Some
-          text..Some text.. Some text..
-        </p>
+        <Paragraph />
       </div>
     </div>
   );
