@@ -1,3 +1,4 @@
+import { arraylinkList } from "./LinksList";
 import "./Search-menu.css";
 export const SearchMenu = () => {
   return (
@@ -9,6 +10,13 @@ export const SearchMenu = () => {
           className="side-bar-input"
           placeholder="Search here..."
         />{" "}
+        {arraylinkList.map((item) => {
+          return (
+            <div className="side-bar-links-container">
+              <li className="side-bar-links">{item}</li>
+            </div>
+          );
+        })}
       </di>
       <div className="search-menu-contents">page content</div>
     </div>
