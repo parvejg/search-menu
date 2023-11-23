@@ -6,18 +6,18 @@
   align-content: center;
 }
 .side-bar-container {
-  width: fit-content;
   background-color: gainsboro;
   padding-top: 1rem;
   text-align: left;
-  height: fit-content;
 }
 .search-menu-contents {
   display: flex;
-  width: 100%;
-  height: 100%;
+  max-width: 100%;
+  min-height: 100%;
+
   flex-direction: column;
   background-color: rgb(214, 203, 203);
+  padding: 0 1rem;
 }
 .sidebar-heading {
   padding-left: 1rem;
@@ -28,7 +28,6 @@
   padding: 0.5rem 1.6rem;
   border: 1px solid black;
   border-radius: 3px;
-  max-width: 100%;
 }
 .side-bar-input:active {
   border: hidden;
@@ -39,12 +38,19 @@
   text-align: left;
   padding-left: 1rem;
   font-size: large;
-  width: 100%;
-  height: 100%;
 }
 .side-bar-links:hover {
   background-color: snow;
 }
 .side-bar-links-container {
   flex-wrap: wrap;
+}
+.content-page-content {
+  font-style: oblique;
+  word-spacing: 1rem;
+  font-size: larger;
+  padding: 1rem 0;
+  text-decoration: double;
+  text-shadow: 2px 2px wheat;
+  max-height: 100%;
 }
