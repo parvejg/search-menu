@@ -1,21 +1,12 @@
-.search-menu-main-container {
-  display: flex;
-  background-color: gainsboro;
-  width: 75%;
-  height: 80vh;
-  align-content: center;
-}
 .side-bar-container {
-  background-color: gainsboro;
-  padding-top: 1rem;
-  text-align: left;
-}
-.search-menu-contents {
   display: flex;
-  text-overflow: auto;
   flex-direction: column;
-  background-color: rgb(214, 203, 203);
-  padding: 0 1rem;
+  max-width: 20%;
+  max-height: 80vh;
+  background-color: silver;
+  text-align: left;
+  overflow: auto;
+  justify-content: center;
 }
 .sidebar-heading {
   padding-left: 1rem;
@@ -39,15 +30,7 @@
   background-color: snow;
 }
 .side-bar-links-container {
-  flex-wrap: wrap;
-}
-.content-page-content {
-  font-style: oblique;
-  word-spacing: 1rem;
-  font-size: larger;
-  padding: 1rem 0;
-  text-decoration: double;
-  text-shadow: 2px 2px wheat;
-  max-height: 100%;
-  overflow: auto;
+  width: 100%;
+  height: 100%;
+  background-color: rgb(179, 168, 168);
 }
