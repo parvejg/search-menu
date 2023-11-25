@@ -3,10 +3,10 @@ import { arraylinkList } from "./LinksList";
 import "./Search-menu.css";
 import { Paragraph } from "./Paragraph";
 export const SearchMenu = () => {
-  const [inputValue, setInputValue] = useState([]);
+  const [inputValue, setInputValue] = useState("");
 
   const filteredData = arraylinkList.filter((item) =>
-    item.toLowerCase().includes(inputValue)
+    item.toLowerCase().includes(inputValue.toUpperCase())
   );
 
   return (
