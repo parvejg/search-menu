@@ -11,7 +11,7 @@ export const SearchMenu = () => {
 
   return (
     <div className="side-bar-container">
-      <h1 className="sidebar-heading">Menu</h1>
+      <h2 className="sidebar-heading">Search Menu</h2>
       <input
         type="text"
         className="side-bar-input"
